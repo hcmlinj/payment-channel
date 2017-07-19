@@ -1,0 +1,23 @@
+{
+  "name": "payment-channel",
+  "version": "1.0.0",
+  "description": "payment channel dapp",
+  "main": "index.js",
+  "scripts": {
+    "testrpc": "testrpc",
+    "truffle": "truffle",
+    "migrate": "truffle migrate --reset",
+    "console": "truffle console",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "payment-channel"
+  },
+  "author": "Jamie",
+  "license": "ISC",
+  "dependencies": {
+    "ethereumjs-testrpc": "^4.0.1",
+    "truffle": "^3.4.4"
+  }
+}
