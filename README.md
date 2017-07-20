@@ -1,5 +1,6 @@
 # Payment Channel
 Using solidity smart contract implements payment channel on Ethereum.
+Inspired by [Ethereum Payment Channel in 50 Lines of Code](https://medium.com/@matthewdif/ethereum-payment-channel-in-50-lines-of-code-a94fad2704bc)
 
 ## Install
 ```bash
