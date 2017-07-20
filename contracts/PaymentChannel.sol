@@ -21,7 +21,6 @@ contract PaymentChannel {
         startDate = now;
         endDate = startDate + timeout;
         
-        
         if (msg.value > 0) Received(msg.sender, msg.value);
     }
     
@@ -30,7 +29,7 @@ contract PaymentChannel {
     }
     
     function close(bytes32 message, uint8 v, bytes32 r, bytes32 s, uint amount) {
-        bytes32 h = sha3("\x19Ethereum Signed Message:\n32", sha3(message));
+        bytes32 h = sha3("\x19Ethereum Signed Message:\n32", message);
         address signer = ecrecover(h, v, r, s);
         
         if (signer != sender && signer != recipient) revert();
